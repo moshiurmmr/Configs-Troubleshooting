@@ -1,0 +1,10 @@
+1. Install virtualenv using pip3
+$	pip3	install	--user	--upgrade	virtualenv
+
+2. To create an isolated Python environment
+  i. go to the directory, $ cd <virtualenv_dir>
+  ii. $	virtualenv	env
+  
+3. To activate the virtualenv
+  i. go to the folder, $ cd <virtualenv_dir>
+  ii. activate the virtualenv, $	source	env/bin/activate
