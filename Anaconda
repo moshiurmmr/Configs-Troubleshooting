@@ -1,2 +1,7 @@
 1. Start Anaconda navigator from Linux command prompt
 $anaconda-navigator
+
+2. Problem: '$ anaconda-navigator' command won't start the anaconda navigator
+  Solution: i. run the command '$conda install anaconda-navigator'
+            ii. then run, '$ anaconda-navigator', it should work.
+            
