@@ -8,3 +8,17 @@ $	pip3	install	--user	--upgrade	virtualenv
 3. To activate the virtualenv
   i. go to the folder, $ cd <virtualenv_dir>
   ii. activate the virtualenv, $	source	env/bin/activate
+  
+4. Install TensorFlow 
+  A) (not successful work in progress....)
+    i. activate the virtualenv going to the folder where virtualenv is installed, $ cd <virtualenv_dir>
+    ii. install TensorFlow using pip3, $ pip3 install --upgrade tensorflow
+    iii. test the successful installation of TensorFlow, $ python3 -c 'import tensorflow; print (tensorflow.__version__)'
+      if the installation is successful it will show the TensorFlow version, e.g., 
+  B) install using Anaconda-Navigator
+    in the home page, 
+    i. selectEnvironments
+    ii. in thrird (software) sub-window, first tab, select All
+    iii. in the search tab, type tensorflow
+    iv. select (put a tick mark next to) tensorflow
+    v. optinally, select tensorflow-tensorboard 
