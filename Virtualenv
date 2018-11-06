@@ -22,3 +22,16 @@ $	pip3	install	--user	--upgrade	virtualenv
     iii. in the search tab, type tensorflow
     iv. select (put a tick mark next to) tensorflow
     v. optinally, select tensorflow-tensorboard 
+    
+5. Tensoboard does not work
+  do the following in the tensorboard virtualenv ($ source env/bin/activate)
+  i. install tensorboard by, $ pip3 install tensorboard
+  ii. but tensorboard was not working though it was shown in $ pip3 freeze or $ pip3 list
+  iii. find the tensorboard installation path with $ pip3 show tensorboard
+        it shows the tensorboard installation path, '/home/<user>/.local/lib/python3.4/site-packages'
+  iv. add the path in .bashrc 
+        - $ vim .bashrc
+        - then add the following line in the .basrch file
+          alias tensorboard='python3 /home/<user>/.local/lib/python3.4/site-packages/tensorboard/main.py'
+  v. save and exit the .bashrc file. then run $ exec bash
+  vi. run tensorboard in the tensorflow virtualenv ($ source env/bin/activate), it should work.
