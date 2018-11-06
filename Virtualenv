@@ -35,3 +35,5 @@ $	pip3	install	--user	--upgrade	virtualenv
           alias tensorboard='python3 /home/<user>/.local/lib/python3.4/site-packages/tensorboard/main.py'
   v. save and exit the .bashrc file. then run $ exec bash
   vi. run tensorboard in the tensorflow virtualenv ($ source env/bin/activate), it should work.
+
+6. Update tensorboard, in virtualenv, $ pip3 install --user  --upgrade tensorflow
