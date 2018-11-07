@@ -10,3 +10,6 @@ $anaconda-navigator
 4. To update anaconda
   i. update package manager, $ conda update conda
   ii. update meta package, $ conda update anaconda
+  
+5. To check Python version in Anaconda, chec platform it is running on, andbase paths for environment and packages
+    $ conda info
