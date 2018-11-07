@@ -5,3 +5,8 @@ $anaconda-navigator
   Solution: i. run the command '$conda install anaconda-navigator'
             ii. then run, '$ anaconda-navigator', it should work.
             
+3. To check anaconda version, $conda list anaconda
+
+4. To update anaconda
+  i. update package manager, $ conda update conda
+  ii. update meta package, $ conda update anaconda
