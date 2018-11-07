@@ -13,3 +13,13 @@ $anaconda-navigator
   
 5. To check Python version in Anaconda, chec platform it is running on, andbase paths for environment and packages
     $ conda info
+    
+6. Install tensorflow in a conda environment
+  i. create a conda environment for installing Tensorflow, let's name the environment 'tensorflow' using Python version 3.6
+      $ conda create -n tensorflow python=3.6
+  ii. activate the tensorflow conda environment, $ source activate tensorflow
+  iii. now in the tensorflow conda environment prompt install tensorflow
+      (tensorflow) <user>@<machine_name>:~/<directory>$ pip install --ignore-installed --upgrade tensorflow
+      This will install tensorflow in your anaconda directory, e.g., ~/anaconda3/envs/tensorflow. Normally, it doesn't matter
+      in which directory you put the tensorflow installation command, it will be installed in the anaconda envs directory 
+      (~/anaconda3/envs/)
