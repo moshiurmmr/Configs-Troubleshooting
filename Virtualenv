@@ -9,6 +9,7 @@ $	pip3	install	--user	--upgrade	virtualenv
   i. go to the folder, $ cd <virtualenv_dir>
   ii. activate the virtualenv, $	source	env/bin/activate
   
+<Tensorflow procedues in 4, 5, 6 are not in reliable, need work...>
 4. Install TensorFlow 
   A) (not successful work in progress....)
     i. activate the virtualenv going to the folder where virtualenv is installed, $ cd <virtualenv_dir>
