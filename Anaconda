@@ -19,7 +19,7 @@ $anaconda-navigator
       $ conda create -n tensorflow python=3.6
   ii. activate the tensorflow conda environment, $ source activate tensorflow
   iii. now in the tensorflow conda environment prompt install tensorflow
-      (tensorflow) <user>@<machine_name>:~/<directory>$ pip install --ignore-installed --upgrade tensorflow
+      (tensorflow) <user>@<machine_name>:~/<directory>$ pip install --ignore-installed --upgrade tensorflow # do not use pip3 instad of pip, it creates installation problem
       This will install tensorflow in your anaconda directory, e.g., ~/anaconda3/envs/tensorflow. Normally, it doesn't matter
       in which directory you put the tensorflow installation command, it will be installed in the anaconda envs directory 
       (~/anaconda3/envs/)
