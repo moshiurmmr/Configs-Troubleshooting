@@ -23,3 +23,10 @@ $anaconda-navigator
       This will install tensorflow in your anaconda directory, e.g., ~/anaconda3/envs/tensorflow. Normally, it doesn't matter
       in which directory you put the tensorflow installation command, it will be installed in the anaconda envs directory 
       (~/anaconda3/envs/)
+ 7. Troubleshoot:
+  problem: tensorflow runs in python (e.g., '$ python'; '>>>') in virtualenv. But it's unavailable in Jupyter notebook when the
+  notebook is run from the virtulenv prompt ('(tflow) moshiur@moshiur-ubuntu:~$').
+  Solution: The reason is Jupyter notebook is not installed in the environment. Note that the notebook might be installed in
+  the operating system (e.g., Ubuntu/Windows) but as the virtulaenv (tflow here) is separate from the operating system, it
+  should be installed in the in virtualenv, '(tflow) moshiur@moshiur-ubuntu:~$ conda install jupyter notebook'. 
+  Same is true for any package (e.g., scipy, scikit-learn) that is used in virtualenv.
