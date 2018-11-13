@@ -30,7 +30,8 @@ $anaconda-navigator
   the operating system (e.g., Ubuntu/Windows) but as the virtulaenv (tflow here) is separate from the operating system, it
   should be installed in the in virtualenv, '(tflow) moshiur@moshiur-ubuntu:~$ conda install jupyter notebook'. 
   Same is true for any package (e.g., scipy, scikit-learn) that is used in virtualenv.
-8. Install scikit-lear, scipy, pandas using conda
+8. Install scikit-lear, scipy, pandas, matplotlib using conda
   i. conda install scikit-learn
   ii. conda install -c anaconda scipy 
   iii. conda install pandas
+  iv. conda install -c conda-forge matplotlib
