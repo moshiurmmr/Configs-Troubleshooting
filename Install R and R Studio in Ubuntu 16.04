@@ -1,0 +1,27 @@
+# Following are the steps to install R and RStudio in Ubuntu 16.04 Xenial
+
+##### Intall R ###############
+# import the key
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+
+# add the following repository to /etc/apt/sources.list file 
+deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/
+
+# To install complete R system, update the system then install r-base
+sudo apt-get update
+sudo apt-get install r-base
+
+# if you need to compile R packages from sources install r-base-dev
+sudo apt-get install r-base-dev
+
+
+##### Intall R Studio ###############
+# download R Studio deb package for Ubuntu 16.04 from https://www.rstudio.com/products/rstudio/download/
+
+# install gedbi-core that is used for installing deb packages
+sudo apt-get install gdebi-core
+
+#install the downloaded R Studio file 
+sudo gdebi rstudio-xenial-1.1.463-amd6
+
+# you can also install the downloaded deb package via Ubuntu Software center by just double-clicking it
