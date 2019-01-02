@@ -40,3 +40,9 @@ Git local repository operations
     
 6. Push changes made in the local repository to the remote repository
     i. $ git push origin master
+    
+Git cloning
+-------------
+1. Clone a remote repository
+    i. go to the local directory where you want to clone the remote repository
+    $ git clone <git_remote_repository_url>
