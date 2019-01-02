@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jan  1 23:08:21 2019
+
+@author: moshiur
+"""
+
+Git configuration check
+------------------------
+    1. Show git configurations
+        i. git confing --list
+
+
+Git local repository operations
+---------------------------------
+1. Create a local directory as a git repository
+    i. $ cd <local_directory>
+    ii.$ init
+    
+2. Add files to the staging area
+    i. $ git add <file_name>
+    ii. $ git add . # to add all the files in the directory
+    iii. $ git reset HEAD <file_name> # to unstage a file
+    
+3. Commit the files that were staged (in step 2 above)
+    i. $ git commit -m "<comments_for_the_commit>"
+    ii. $ git reset --soft HEAD ~1
+
+4. Check the status (and log) of the local git repository
+    i. $ git status
+    ii. $ git log # shows the commit logs
+
+5. Add URL of the remote repository where the local repository will be pushed
+    i. create a folder in the remote repository (e.g., https://github.com/<your_account>) 
+        with the same name as the local directory
+    ii. copy the url, click the 'Clone or download' tab to find the URL
+    iii. $ git remote add origin <remote_repository_url>
+    iv. $ git remote -v # verify the remote URL
+    
+6. Push changes made in the local repository to the remote repository
+    i. $ git push origin master
