@@ -16,7 +16,7 @@ Git local repository operations
 ---------------------------------
 1. Create a local directory as a git repository
     i. $ cd <local_directory>
-    ii.$ init
+    ii.$ git init
     
 2. Add files to the staging area
     i. $ git add <file_name>
@@ -40,6 +40,7 @@ Git local repository operations
     
 6. Push changes made in the local repository to the remote repository
     i. $ git push origin master
+    ii, $ git push -u origin master # to push from an existing local directory
     
 Git cloning
 -------------
