@@ -47,3 +47,8 @@ Git cloning
 1. Clone a remote repository
     i. go to the local directory where you want to clone the remote repository
     $ git clone <git_remote_repository_url>
+
+Git Pull
+------------
+1. To pull from the remote repository to local repository
+    $git pull origin master
