@@ -9,7 +9,7 @@ Created on Tue Jan  1 23:08:21 2019
 Git configuration check
 ------------------------
     1. Show git configurations
-        i. git confing --list
+        i. git config --list
 
 
 Git local repository operations
