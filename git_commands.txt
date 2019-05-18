@@ -58,5 +58,6 @@ Git Pull
 Delete a file from the local and remote repository
 --------------------------------------------------
 1. git rm <file_name> # if there is any error use the flag '-f' after 'rm' to force the delete
-2. git commit -m "<optional comment on the action>"
-3. git push origin master
+2. git add <file_name> # add change to the staging area
+2. git commit -m "<optional comment on the action>" # commit change
+3. git push origin master # push the change
