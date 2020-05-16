@@ -3,11 +3,13 @@ $	pip3	install	--user	--upgrade	virtualenv
 
 2. To create an isolated Python environment
   i. go to the directory, $ cd <virtualenv_dir>
-  ii. $	virtualenv	env
+  ii. $	virtualenv env ('env' can be any name of your choice)
+  iii. for creating a virtualenv with any particular Pyhton version 
+	$virtualenv -p /usr/bin/python3.6 env # here we are using Python 3.6
   
 3. a. To activate the virtualenv
       i. go to the folder, $ cd <virtualenv_dir>
-      ii. activate the virtualenv, $	source	env/bin/activate
+      ii. activate the virtualenv, $source env/bin/activate
    b. To deactivate the virtualenv
       $ source deactivate
   
@@ -16,6 +18,10 @@ $	pip3	install	--user	--upgrade	virtualenv
     ii. $conda info --envs
 5. To acivate a virtualenv use, $ source activate <virtualenv_name>
 6. To deacivate a virtualenv use, $ source deactivate <virtualenv_name>
+7. To delete a virtualenv, $rm -rf <virtualenv name>
+8. create a virtualenv with a specific Python version
+ $conda create -n <virualenv name> python=<python_version> anaconda
+9. update anaconda, $conda update -n base -c defaults conda
   
 <Tensorflow procedues in x, y, z are not in reliable, need work...>
 x. Install TensorFlow 

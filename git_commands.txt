@@ -47,6 +47,8 @@ Git cloning
 1. Clone a remote repository
     i. go to the local directory where you want to clone the remote repository
     $ git clone <git_remote_repository_url>
+2. To get the remote cloning url for a repository
+    $git config --get remote.origin.url
 
 =======
 
@@ -54,6 +56,10 @@ Git Pull
 ------------
 1. To pull from the remote repository to local repository
     $git pull origin master
+2. When git shows the error 'fatal: refusing to merge unrelated histories', do the following
+   $ git pull origin master  --allow-unrelated-histories
+3. To pull a file from the remote repository to local repository
+   $ git pull origin/master <file_name>
 
 Delete a file from the local and remote repository
 --------------------------------------------------
